@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps API Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="description" content="Park n Bark">
+    <meta name="theme-color" content="#d0021b" />
+    <link rel="apple-touch-icon" href="icons/icon-512x512.png" />
+  </head>
+  <body>
+    <script src="sw.js"></script>
+    <span>Radius slider: </span><input type="range" min="200" max="10000" value="5000" id="radius-slider">
+
+    <div class="top">
+      <h1> Go outside, Visit a </h1>
+      <select id="placeType">
+        <option value="atm">ATM</option>
+        <option value="bakery">Bakery</option>
+        <option value="bank">Bank</option>
+        <option value="bar">Bar</option>
+        <option value="book_store">Book Store</option>
+        <option value="cafe">Cafe</option>
+        <option value="clothing_store">Clothing Store</option>
+        <option value="convenience_store">Convenience Store</option>
+        <option value="department_store">Department Store</option>
+        <option value="drugstore">Drugstore</option>
+        <option value="electronics_store">Electronics Store</option>
+        <option value="hospital">Hospital</option>
+        <option value="jewelry_store">Jewelry Store</option>
+        <option value="movie_theater">Movie Theater</option>
+        <option value="night_club">Night Club</option>
+        <option value="park">Park</option>
+        <option value="pharmacy">Pharmacy</option>
+        <option value="primary_school">Primary School</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="secondary_school">Secondary School</option>
+        <option value="shoe_store">Shoe Store</option>
+        <option value="shopping_mall">Shopping Mall</option>
+        <option value="stadium">Stadium</option>
+        <option value="supermarket">Supermarket</option>
+        <option value="tourist_attraction">Tourist Attraction</option>
+        <option value="university">University</option>
+      </select>
+      <h1> ! </h1>
+    </div>
+
+
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-5111AS8pVuSS5U3K66w3y5JBJIHyJ_E&libraries=places&callback=initMap">
+    </script>
+  </body>
+</html>
